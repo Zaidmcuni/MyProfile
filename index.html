@@ -22,8 +22,78 @@
             section{
                 padding:10px;
                 border:1px solid black;
-                margin:10px
+                margin:10px 0;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                 box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    
             }
+           a {
+    max-width: 150px;
+    display: inline-block; /* ensures max-width works properly */
+    white-space: nowrap;   /* prevents button text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* adds ... if text is too long */
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header.header h1 {
+    text-align: center;
+}
+nav.navbar ul {
+    list-style: none;      /* Remove bullets */
+    padding: 0;            /* Remove default padding */
+    margin: 0;             /* Remove default margin */
+    display: flex;         /* Arrange items in a row */
+    justify-content: center; /* Center the whole nav horizontally */
+    gap: 20px;             /* Space between links */
+}
+
+nav.navbar ul li {
+    display: inline;       /* Optional: keep list items inline */
+}
+
+nav.navbar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black;          /* Set link color */
+    padding: 5px 10px;     /* Add spacing around links */
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Normal: horizontal navbar links */
+nav.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* On narrow screens (max width 600px), stack vertically */
+@media (max-width: 600px) {
+    nav.navbar ul {
+        flex-direction: column;  /* stack vertically */
+        align-items: center;     /* center items horizontally */
+        gap: 10px;               /* smaller gap vertically */
+    }
+}
+
+
+
+
+
+
 
         </style>
     </head>
@@ -59,32 +129,20 @@
 
         </article>
         <section id="Experience">
-        <h2>Experience</h2>
+    <h2>Experience</h2>
+    <div class="job">
+        <h3>Access to Arabia</h3>
+        <p><strong>Duration:</strong> 07/2025 - 08/2025</p>
+        <ul>
+  <li>Learned foundational SQL and C#, along with basic HTML, to understand the building blocks of the .NET framework.</li>
+  <li>Developed a functional login web page, integrating frontend and backend logic using C# (.NET) and SQL for user authentication.</li>
+  <li>Practiced Git version control, including cloning repositories, committing changes, branching, and merging to maintain code integrity.</li>
+</ul>
 
-            <table>
-                <colgroup>
-                    <col span="1" style="background-color: #ddd;">
-                </colgroup>
-                <tr>
-                    <th>Company</th>
-                    <th>Details</th>
-                    <th>Date</th>
+    </div>
+    <!-- Repeat for other jobs -->
+</section>
 
-                </tr>
-                <tr>
-                    <th>
-                        Access to Arabia
-                    </th>
-                    <th>
-                        Learned sql and<br> .net framwork
-                    </th>
-                    <th>
-                        07/2025-08/2025
-                    </th>
-                </tr>
-            </table>
-
-        </section>
         
         <section id="Education">
             <h2>Education</h2>
