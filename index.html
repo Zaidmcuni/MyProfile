@@ -1,195 +1,173 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Zaid Abdel Rahman's Resume
-        </title>
-
-        <style>
-            .footer{
-                text-align:center;
-                padding:10px;
-                background-color:#ddd;
-            }
-            table{
-                width:100%;
-                border:1px solid black;
-            }
-            dt{
-                font-weight:bold;
-                font-size:2em;
-            }
-            section{
-                padding:10px;
-                border:1px solid black;
-                margin:10px 0;
-                border-radius: 10px;
-                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                 box-shadow: 0 8px 12px rgba(0,0,0,0.2);
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
-    
-            }
-           a {
-    max-width: 150px;
-    display: inline-block; /* ensures max-width works properly */
-    white-space: nowrap;   /* prevents button text wrapping */
-    overflow: hidden;
-    text-overflow: ellipsis; /* adds ... if text is too long */
-}
-
-a:hover {
-    background-color: #0056b3;
-}
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-header.header h1 {
-    text-align: center;
-}
-nav.navbar ul {
-    list-style: none;      /* Remove bullets */
-    padding: 0;            /* Remove default padding */
-    margin: 0;             /* Remove default margin */
-    display: flex;         /* Arrange items in a row */
-    justify-content: center; /* Center the whole nav horizontally */
-    gap: 20px;             /* Space between links */
-}
-
-nav.navbar ul li {
-    display: inline;       /* Optional: keep list items inline */
-}
-
-nav.navbar ul li a {
-    text-decoration: none; /* Remove underline */
-    color: black;          /* Set link color */
-    padding: 5px 10px;     /* Add spacing around links */
-}
-html {
-    scroll-behavior: smooth;
-}
-/* Normal: horizontal navbar links */
-nav.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* On narrow screens (max width 600px), stack vertically */
-@media (max-width: 600px) {
-    nav.navbar ul {
-        flex-direction: column;  /* stack vertically */
-        align-items: center;     /* center items horizontally */
-        gap: 10px;               /* smaller gap vertically */
-    }
-}
-
-
-
-
-
-
-
-        </style>
-    </head>
-    <body>
-        <header class="header"><h1>Zaid Abdel Rahman's Resume</h1></header>
-        
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="#Experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#Education">Education</a>
-                </li>
-                <li>
-                    <a href="#Intrests">Intrests</a>
-                </li>
-                <li>
-                    <a href="#Technical Skills">Technical Skills</a>
-                </li>
-                <li>
-                    <a href="#Contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <article>
-            <h2> Welcome to my Resume</h2>
-            <hr>
-            <section>
-  <h3>Summary</h3>
-  <p>Second-year Software Engineering Co-op student at McGill University, proficient in Java, Python, C#, and JavaScript. Experienced with HTML (through industry internship), as well as data structures (trees, heaps) and algorithms (merge sort, quick sort, binary search). Developed a secure login web app using SQL and .NET during my internship. Continuously learning and expanding my skill set through academic projects, independent study (CSS, JavaScript), and GitHub contributions. Driven by problem-solving, adaptability, and collaboration—focused on hands-on engineering excellence</p>
-</section>
-
-        </article>
-        <section id="Experience">
-    <h2>Experience</h2>
-    <div class="job">
-        <h3>Access to Arabia</h3>
-        <p><strong>Duration:</strong> 07/2025 - 08/2025</p>
-        <ul>
-  <li>Learned foundational SQL and C#, along with basic HTML, to understand the building blocks of the .NET framework.</li>
-  <li>Developed a functional login web page, integrating frontend and backend logic using C# (.NET) and SQL for user authentication.</li>
-  <li>Practiced Git version control, including cloning repositories, committing changes, branching, and merging to maintain code integrity.</li>
-</ul>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Abdel Rahman - Software Engineering Resume</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.4; 
+            color: #2c3e50; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+            background: #f8f9fa; 
+        }
+        .header { 
+            text-align: center; 
+            border-bottom: 3px solid #3498db; 
+            padding-bottom: 1.5rem; 
+            margin-bottom: 2rem; 
+        }
+        .name { font-size: 2.5rem; font-weight: 700; color: #2c3e50; margin-bottom: 0.5rem; }
+        .contact { font-size: 1.1rem; color: #7f8c8d; margin-bottom: 1rem; }
+        .contact a { color: #3498db; text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+        .section { margin-bottom: 2rem; }
+        .section-title { 
+            font-size: 1.4rem; 
+            font-weight: 600; 
+            color: #2c3e50; 
+            border-left: 4px solid #3498db; 
+            padding-left: 1rem; 
+            margin-bottom: 1rem; 
+        }
+        .job-title { font-weight: 600; color: #34495e; margin-bottom: 0.3rem; }
+        .company-location { color: #7f8c8d; font-style: italic; margin-bottom: 0.8rem; }
+        .date { color: #7f8c8d; font-size: 0.95rem; margin-bottom: 0.5rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.4rem; }
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 1rem; 
+        }
+        .skill-category { 
+            background: white; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        .skill-title { font-weight: 600; margin-bottom: 0.5rem; color: #3498db; }
+        @media (max-width: 600px) { 
+            body { padding: 1rem; } 
+            .name { font-size: 2rem; }
+        }
+        .print-friendly { display: none; }
+        @media print { 
+            body { background: white; padding: 0; }
+            .print-friendly { display: block; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">Zaid Abdel Rahman</h1>
+        <div class="contact">
+            Montréal, QC | 1(438)528-9545 | <a href="mailto:zaidkhanfer@gmail.com">zaidkhanfer@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/zaidabdelrahman">linkedin.com/in/zaidabdelrahman</a> | 
+            <a href="https://github.com/Zaidmcuni">https://github.com/Zaidmcuni</a>
+        </div>
     </div>
-    <!-- Repeat for other jobs -->
-</section>
 
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="job-title">B.Eng., Software Engineering Co-op</div>
+        <div class="company-location">McGill University, Montreal, QC</div>
+        <div class="date">August 2024 – May 2028</div>
+        <div><strong>Relevant coursework:</strong></div>
+        <ul>
+            <li>Programming in Python, Java, and data structures with modular design, control structures, and object-oriented concepts</li>
+            <li>Systems programming in C and bash scripting, focusing on low-level programming and automation</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Software Engineering Experience</h2>
         
-        <section id="Education">
-            <h2>Education</h2>
-          <h2>McGill University - 2028</h2>
-<h3>BEng in Software Engineering (Co-op)</h3>
-<ul>
-  <li>Developed proficiency in Java and Python through coursework and independent study.</li>
-  <li>Acquired foundational knowledge of data structures (trees, heaps) and algorithms (binary search, merge sort, quick sort, bubble sort).</li>
-  <li>Applied these concepts through coding challenges and hands-on projects, reinforcing theoretical learning and problem-solving abilities.</li>
-</ul>
+        <div class="job-title">Campus Marketplace, Full-Stack Personal Project</div>
+        <div class="company-location">Montreal, Quebec</div>
+        <div class="date">September 2025 – Present</div>
+        <ul>
+            <li>Developed a campus marketplace web application using Python's Django framework, integrating backend and frontend functionality</li>
+            <li>Built responsive and user-friendly interfaces with HTML and CSS for seamless navigation</li>
+            <li>Connected Django backend to a MySQL database for managing dynamic user data, product listings, and messaging functionality</li>
+        </ul>
 
-        </section>
+        <div style="margin-top: 2rem;"></div>
         
-        <section id="Technical Skills">
-            <h2>Technical Skills</h2>
-            <ul>
-  <li>Programming Languages: Java, Python, C#</li>
-  <li>Web Technologies: HTML, .NET Framework</li>
-  <li>Databases: Microsoft SMSS (SQL; queries, integration with .NET)</li>
-  <li>Data Structures & Algorithms: Trees, Heaps, Binary Search, Sorting algorithms, Recursion</li>
-  <li>Programming Concepts: Object-Oriented Programming (OOP), Object-Oriented Design (OOD)</li>
-  <li>Version Control: Git (clone, commit, branch, merge, pull, push)</li>
-  <li>Other Skills: Problem-Solving, Teamwork, Adaptability, Communication</li>
-</ul>
+        <div class="job-title">Software Engineering Intern</div>
+        <div class="company-location">Access to Arabia (A2A), Amman, Jordan</div>
+        <div class="date">July 2025 – August 2025</div>
+        <ul>
+            <li>Developed proficiency in C programming and .NET framework through hands-on web development projects</li>
+            <li>Applied HTML and CSS skills to create responsive user interfaces and enhance user experience design</li>
+            <li>Gained experience with SQL database integration and backend development methodologies</li>
+            <li>Collaborated with development team on code reviews, testing procedures, and software engineering best practices</li>
+        </ul>
 
+        <div class="job-title">A2A Web Application, Full-Stack</div>
+        <div class="company-location">Amman, Jordan</div>
+        <div class="date">July 2025 – August 2025</div>
+        <ul>
+            <li>Built a complete web application using .NET framework with Model-View-Controller (MVC) architectural pattern</li>
+            <li>Integrated C backend with SQL Server database for robust data management and user authentication</li>
+            <li>Designed responsive user interfaces using HTML and CSS for optimal cross-platform compatibility</li>
+            <li>Implemented secure login functionality with session management and database integration</li>
+        </ul>
+    </div>
 
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="job-title">Pharmacy Technician</div>
+        <div class="company-location">Zircon Pharmacy, Amman, Jordan</div>
+        <div class="date">June 2023 – August 2023</div>
+        <ul>
+            <li>Assisted pharmacists with prescription processing and medication dispensing</li>
+            <li>Maintained accurate inventory records and organized pharmaceutical supplies</li>
+            <li>Provided customer service and support to patients with medication inquiries</li>
+        </ul>
+    </div>
 
-        </section>
-        <section id="Contact">
-            <h2>Contact</h2>
-            <p><a href="tel:+14385289545">Call Me</a>
-            <p><a href="mailto:zaidkhanfer@gmail.com">Email me</a></p>
-            <p><a href="https://www.linkedin.com/in/zaid-abdel-rahman-b20a73313/" target="_blank">  LinkedIn</a></p>
-        
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Programming Languages</div>
+                Java, Python, C, bash, C#
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Web Technologies</div>
+                HTML, CSS
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">IDEs</div>
+                Visual Studio, IntelliJ, VS Code
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Frameworks</div>
+                Django, .NET
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Databases</div>
+                SSMS (SQL), MySQL
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Version Control</div>
+                Git
+            </div>
+        </div>
+        <div style="margin-top: 1rem; font-style: italic; color: #7f8c8d;">
+            Languages: English, Arabic (Native), French (Basic)
+        </div>
+    </div>
 
-
-        </section>
-
-        
-        
-        
-            
-        </section>
-        <footer class="footer">
-            Copyright (c) 2022 Zaid Abdel Rahman
-        </footer> 
-
-        
-    </body>
+    <div class="print-friendly">
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #7f8c8d;">
+            Print optimized version - Ctrl+P for printer-friendly format
+        </p>
+    </div>
+</body>
 </html>
